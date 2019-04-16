@@ -14,6 +14,8 @@ knitr::opts_chunk$set(
 ```
 # gganonymize
 
+[![Travis build status](https://travis-ci.org/EmilHvitfeldt/gganonymize.svg?branch=master)](https://travis-ci.org/EmilHvitfeldt/gganonymize)
+
 The goal of gganonymize is to anonymize the labels and text in a ggplot2 object in such a way that vizualizations about sensitive information can more easily be shared and critiqued. 
 
 ## Installation
