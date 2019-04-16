@@ -1,0 +1,19 @@
+Package: gganonymize
+Title: The goal of gganonymize is to anonymize the labels and text in a 
+    'ggplot2' object in such a way that vizualizations about sensitive 
+    information can more easily be shared and critiqued
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Emil",
+           family = "Hvitfeldt",
+           role = c("aut", "cre"),
+           email = "emilhhvitfeldt@gmail.com")
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 2.10)
+Imports: 
+    ggplot2
+RoxygenNote: 6.1.1
