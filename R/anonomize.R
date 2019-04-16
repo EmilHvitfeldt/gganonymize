@@ -11,12 +11,14 @@ anonomize_labels <- function(x) {
 
 anonomize_char <- function(x) {
   if (any(is.character(x))) {
-    places <- as.numeric(as.factor(x))
-    return(sample(animals, max(places))[places])
+    out <- as.factor(x)
+    levels(out) <- sample(animals, length(levels(out)))
+    return(out)
   }
   if (any(is.factor(x))) {
-    places <- as.numeric(x)
-    return(sample(animals, max(places))[places])
+    out <- x
+    levels(out) <- sample(animals, length(levels(out)))
+    return(out)
   }
   x
 }

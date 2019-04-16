@@ -25,8 +25,7 @@ gganonomize <- function(x) {
   }
 
   x$labels[!ignore_labels] <- lapply(x$labels[!ignore_labels], anonomize_labels)
-  x$data <- as.data.frame(lapply(x$data, anonomize_char),
-                          stringsAsFactors = FALSE)
+  x$data <- data.frame(lapply(x$data, anonomize_char), stringsAsFactors = FALSE)
 
   x
 }

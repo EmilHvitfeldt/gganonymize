@@ -58,7 +58,9 @@ Likewise will it sepect names in character/factor variables.
 
 ``` r
 ggg <- ggplot(mpg, aes(class, fill = class)) +
-  geom_bar()
+  geom_bar() + 
+  labs(title = "Super sensitive title",
+       subtitle = "This part is even more sensitive, I hope no one will get to read it")
 
 gganonomize(ggg)
 ```

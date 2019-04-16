@@ -15,5 +15,6 @@ LazyData: true
 Depends:
     R (>= 2.10)
 Imports: 
-    ggplot2
+    ggplot2,
+    tibble
 RoxygenNote: 6.1.1
