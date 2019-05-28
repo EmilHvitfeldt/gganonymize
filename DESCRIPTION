@@ -16,5 +16,6 @@ Depends:
     R (>= 2.10)
 Imports: 
     ggplot2,
-    tibble
+    tibble,
+    rlang
 RoxygenNote: 6.1.1

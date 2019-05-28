@@ -100,3 +100,19 @@ gganonomize(ggg)
 ```
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+
+## Now with as much mtcars as possible
+
+``` r
+ggg <- ggplot(mtcars, aes(as.factor(cyl))) +
+  geom_bar() +
+  labs(title = "Test title",
+       subtitle = "Test subtitle, this one have a lot lot lot lot lot more text then the rest",
+       caption = "Test caption",
+       tag = 1) +
+  facet_wrap(~vs)
+
+mtcarsize(ggg)
+```
+
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />

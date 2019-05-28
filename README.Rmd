@@ -95,3 +95,17 @@ ggg <- ggplot(iris, aes(Sepal.Length, Sepal.Width, label = Species)) +
 gganonomize(ggg)
 ```
 
+## Now with as much mtcars as possible
+
+```{r}
+ggg <- ggplot(mtcars, aes(as.factor(cyl))) +
+  geom_bar() +
+  labs(title = "Test title",
+       subtitle = "Test subtitle, this one have a lot lot lot lot lot more text then the rest",
+       caption = "Test caption",
+       tag = 1) +
+  facet_wrap(~vs)
+
+mtcarsize(ggg)
+```
+

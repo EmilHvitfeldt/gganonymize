@@ -1,9 +1,9 @@
 single_word <- function(x) !grepl(" ", x)
 
 #' @importFrom stats runif
-lorem <- function(n) {
+lorem <- function(n, words = NULL) {
   rwords <- function(n) {
-    words <- c("SED", "IN", "UT", "ET", "AC", "EU", "NON",
+    words <- words %||% c("SED", "IN", "UT", "ET", "AC", "EU", "NON",
                "NEC", "AMET", "SIT", "VEL", "AT", "MAURIS", "A",
                "VITAE", "EGET", "QUIS", "NUNC", "NULLA", "ID", "VESTIBULUM",
                "PELLENTESQUE", "TINCIDUNT", "ALIQUAM", "IPSUM",
